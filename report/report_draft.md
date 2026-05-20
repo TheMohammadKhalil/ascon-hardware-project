@@ -17,7 +17,7 @@ The project objectives are:
 - Python package: ascon
 - HDL: SystemVerilog
 - Top-level RTL module: ascon_core
-- FPGA device: [insert device]
+- FPGA device: Intel Cyclone IV E EP4CE115F29C7
 
 ## 4. Hardware Implementation
 The ASCON RTL files were downloaded from an ASCON-Verilog hardware repository. The relevant RTL files were copied into the project hardware/rtl directory. The main hardware files used were config.sv, functions.sv, register.sv, simple_cells.v, asconp.sv, and ascon_core.sv.
@@ -53,17 +53,33 @@ These vectors were used as reference input/output pairs for verification.
 The Python software implementation successfully generated and verified all test vectors. The hardware implementation was synthesized successfully in Quartus. The software output acts as the expected reference for comparing hardware outputs.
 
 ## 10. Area Results
-[Insert Quartus area table here]
+The following results were taken from the Quartus fitter summary for the ascon_core revision.
+
+| Resource | Usage |
+| --- | ---: |
+| Total logic elements | 2,560 / 114,480 (2%) |
+| Total combinational functions | 2,516 / 114,480 (2%) |
+| Dedicated logic registers | 473 / 114,480 (<1%) |
+| Total registers | 473 |
+| Total pins | 125 / 529 (24%) |
+| Total virtual pins | 0 |
+| Total memory bits | 0 / 3,981,312 (0%) |
+| Embedded Multiplier 9-bit elements | 0 / 532 (0%) |
+| Total PLLs | 0 / 4 (0%) |
 
 ## 11. Power Results
-[Insert Quartus power table here]
+The following results were taken from the Quartus Power Analyzer summary.
+
+| Power metric | Value |
+| --- | ---: |
+| Total Thermal Power Dissipation | 174.29 mW |
+| Core Dynamic Thermal Power Dissipation | 0.00 mW |
+| Core Static Thermal Power Dissipation | 98.81 mW |
+| I/O Thermal Power Dissipation | 75.47 mW |
+| Power Estimation Confidence | Low: user provided insufficient toggle rate data |
 
 ## 12. GitHub Repository
-The complete project files were uploaded to a public GitHub repository.
-
-Repository link:
-[insert GitHub link]
+The repository contains the SystemVerilog RTL, Quartus project files, Python reference scripts, generated test vectors, and project report files.
 
 ## 13. Conclusion
 The ASCON hardware implementation was prepared, corrected for Quartus SystemVerilog compatibility, and synthesized successfully. Python software was used to generate and verify reference test vectors. Quartus was used to obtain area and power results. The project demonstrates the complete flow of hardware implementation, software reference generation, and synthesis-based evaluation of ASCON.
-
