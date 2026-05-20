@@ -1,0 +1,2 @@
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
+set_global_assignment -name SEARCH_PATH /home/mohamad/ascon-hardware-project/hardware/rtl

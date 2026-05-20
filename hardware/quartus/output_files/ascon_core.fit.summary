@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 20 04:14:56 2026
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : ascon_core
+Top-level Entity Name : ascon_core
+Family : Cyclone IV E
+Device : EP4CE115F29C7
+Timing Models : Final
+Total logic elements : 2,560 / 114,480 ( 2 % )
+    Total combinational functions : 2,516 / 114,480 ( 2 % )
+    Dedicated logic registers : 473 / 114,480 ( < 1 % )
+Total registers : 473
+Total pins : 125 / 529 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 0 / 3,981,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
